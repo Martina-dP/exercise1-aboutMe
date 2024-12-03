@@ -49,14 +49,12 @@ public class DelPinoMartinaMain {
                 }
                 case 2: {
                     System.out.println("Favorites");
-                    System.out.println("Hobbies: " + String.join(", ", delPinoMartinaPerfil.getHobbies()));
-                    System.out.println("Foods: " + String.join(", ", delPinoMartinaPerfil.getFoods()));
+                    delPinoMartinaPerfil.getHobbies();
+                    delPinoMartinaPerfil.getFoods();
                     break;
                 }
                 case 3: {
-                    List<String> funFacts = delPinoMartinaPerfil.getFunFacts();
-                    String randomFunFact = funFacts.get((int) (Math.random() * funFacts.size()));
-                    System.out.println("Fun Fact: " + randomFunFact);
+                    System.out.println("Fun fact : " + delPinoMartinaPerfil.getRandomFact());
                     break;
                 }
                 case 4: {

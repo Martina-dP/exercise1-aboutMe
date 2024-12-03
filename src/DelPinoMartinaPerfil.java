@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Random;
 
 public class DelPinoMartinaPerfil {
     private String name;
@@ -28,14 +29,19 @@ public class DelPinoMartinaPerfil {
     public String getStory() {
         return story;
     }
-    public List<String> getHobbies() {
-        return hobbies;
+    public void getHobbies() {
+        for (String hobby : hobbies) {
+            System.out.println(hobby);
+        }
     }
-    public List<String> getFoods() {
-        return foods;
+    public void getFoods() {
+        for (String food : foods) {
+            System.out.println(food);
+        }
     }
-    public List<String> getFunFacts() {
-        return funFacts;
+    public String getRandomFact() {
+        int index = new Random().nextInt(funFacts.size());
+        return funFacts.get((index));
     }
 
     //Formateo la informacion para facilitar lectura
